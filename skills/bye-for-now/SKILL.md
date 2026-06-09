@@ -31,8 +31,8 @@ Look in `<YOUR_VAULT_PATH>/Sessions/` for a file matching today's date and this 
 ### Step 2: Identify new content
 
 Review the conversation and identify everything that happened **after** the last saved prompt/exchange. Extract:
-- New user prompts (quoted verbatim or closely paraphrased)
-- Your key responses (summarized concisely, with verbatim quotes for important details)
+- New user prompts (verbatim — the user's exact wording, word for word, not paraphrased)
+- Your responses (verbatim — the full response text exactly as written, not a summary)
 - New decisions made and their reasoning
 - New code changes: files modified, what changed, and why
 - Errors encountered and how they were resolved
@@ -86,14 +86,14 @@ project: {{project directory name}}
 ## Conversation Log
 
 ### Prompt 1
-> {{User's prompt, verbatim or closely paraphrased}}
+> {{User's prompt — verbatim, word for word}}
 
-**Response:** {{Your response, summarized with key details preserved}}
+**Response:** {{Your full response — verbatim, exactly as written, not a summary}}
 
 ### Prompt 2
-> {{Next prompt}}
+> {{Next prompt — verbatim}}
 
-**Response:** {{Response summary}}
+**Response:** {{Full response — verbatim}}
 
 {{...repeat for all prompts...}}
 
@@ -118,8 +118,8 @@ project: {{project directory name}}
 
 ## Notes
 
+- Record both prompts and responses **verbatim** — exact wording, copied in full, never summarized or paraphrased
 - Err on the side of capturing too much context rather than too little
-- Preserve the user's exact wording for prompts when possible
 - For code changes, include file paths and line numbers when relevant
 - Tag with relevant topic tags for vault search
 - If the conversation is very long, group related exchanges under logical headings rather than numbering every single prompt
